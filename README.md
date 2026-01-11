@@ -7,6 +7,7 @@ The following libraries need to be imported before we invoke the methods:
 - from langchain_core.prompts import PromptTemplate
 - from langchain_core.runnables import RunnableLambda
 - from langchain_core.output_parsers import StrOutputParser
+- from langchain_core.runnables import RunnablePassthrough
 
 Then LLM, parameters, template, and prompt need to be initialized prior to building LCEL 
 
