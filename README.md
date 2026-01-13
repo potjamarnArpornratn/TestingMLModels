@@ -1,6 +1,25 @@
-# TestingMLModels
+# Testing RAG and MLModels
 I created this repository as a general knowledge base for anyone who needs to learn how to test AI Model.
-Contents of this repo came from the knowledge that I acquired for Model validation as part of my job routine.
+Contents of this repo came from the knowledge that I acquired for RAG and Model validation as part of my job routine.
+
+To build RAG, I’ll need the following libraries at minimum:
+- from langchain.document_loaders import TextLoader
+- from langchain.text_splitter import CharacterTextSplitter
+- from langchain.vectorstores import Chroma
+- from langchain.embeddings import HuggingFaceEmbeddings
+- from langchain.chains import RetrievalQA
+- from langchain.prompts import PromptTemplate
+- from langchain.chains import ConversationalRetrievalChain
+- from langchain.memory import ConversationBufferMemory
+
+Besides the above libraries, I’ll need to gather the following:
+1.	Document guideline
+2.	Indexing the tokens from the above document: Embedded and store the data in Chroma DB
+3.	Build parameters and model using pre-trained LLM
+4.	Build PromptTemplate and memory
+5.	Integrate the above model, promptTemplate, and memory with LangChain
+6.	Create ConversationalRetrievalChain
+7.	Build an agent
 
 In order to validate the ML Model, I'll utilize LangChain and PromptTemplate.  I'll create LCEL for the model validation.
 The following libraries need to be imported before we invoke the methods: 
